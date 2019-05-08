@@ -1,48 +1,21 @@
 
-class Coordenadas{
-    constructor(x1,y1,x2,y2){
-        this.x1=x1;
-        this.y1=y1;
-        this.x2=x2;
-        this.y2=y2;
-    }
-    set X1(valor){
-        this.x1=valor;
-    }
-    set X2(valor){
-        this.y1=valor;
-    }
-    set X2(valor){
-        this.x2=valor;
-    }
-    set Y2(valor){
-        this.y21=valor;
-    }
-    get X1(){
-        return this.x1;
-    }get Y1(){
-        return this.y1;
-    }get X2(){
-        return this.x2;
-    }get Y2(){
-        return this.y2;
-    }
-}
-
 
 class Punto{
-    constructor(){
-        this.distancia=0;
+    constructor(coordenadas){
+        this.distancia=coordenadas;
     }
-    agregarCoordenadas(nuevo){
-        if(this.x2!=null && this.y2!=null){
-            this.calcularDistancia(datos)
-        }
-        else{
-            //console.log("agrega los demás")
-        }
-    }
+    
     calcularDistancia(datos){
-        this.distancia=
+        var x1 = document.getElementById("x1").value;
+        var y1 = document.getElementById("y1").value;
+        var x2 = document.getElementById("x2").value;
+        var y2 = document.getElementById("y2").value;
+
+        var punto1=(x2-x1);
+        var punto2=(y2-y1);
+
+        var resultadoTotal = Math.sqrt(Math.pow(punto1, 2) + Math.pow(punto2, 2));
+        document.getElementById("distancia").innerHTML=resultadoTotal
     }
 }
+
