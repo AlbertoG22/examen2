@@ -1,0 +1,22 @@
+body{
+    font: 15px arial;
+    padding: 0;
+    margin: 20px;
+    background: #f4eade;
+}
+.contenedor{
+    margin-left: 40%;
+}
+#distancia{
+    margin-top: -60px;
+    float: left;
+}
+button{
+    background-color: rgb(221, 68, 21);
+    border: 50%;
+    color: white;
+    padding: 5px 20px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+}
